@@ -52,37 +52,4 @@ while True:
             else: # User has already retried the problem enough times.
                 print("The correct answer was: " + str(answer))
                 break
-        
-        
-def print_even(a):
-    for item in a:
-        if not item % 2: # Only even elements.   
-            print(item)
-            
-def print_odd(a):
-    if isinstance(a, list):
-        try:
-            for item in a:
-                if item % 2: # Only odd elements.   
-                    print(item)
-        except TypeError:
-            print("List elements must be numbers.")
-        except:
-            print("Something else went wrong.")
-    else:
-        print("That is not a list.")
-    
-def get_odd(a):
-    if isinstance(a, list):
-        odd_elements = []
-        try:
-            for item in a:
-                if item % 2: # Only odd elements.   
-                    odd_elements.append(item)
-            return odd_elements
-        except TypeError:
-            print("List elements must be numbers.")
-        except:
-            print("Something else went wrong.")
-    else:
-        print("That is not a list.")
+       
